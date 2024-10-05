@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            background-color:  darkblue;
+        }
+        .stopwatch{
+            background-color: cornflowerblue;
+            width: 350px;
+            text-align: center;
+            border-radius: 8px;
+            padding: 5px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        ol{
+            text-align: left;
+            height: 200px;
+            overflow-y: scroll;
+        }
+    </style>
+</head>
+<body>
+    <div class="stopwatch">
+        <h1 style="color: white;">00:00:00:00</h1>
+        <button class="start" onclick="starts()">Start</button>
+        <button class="stop" onclick="stops()">Stop</button>
+        <button onclick="res()">Restart</button>
+        <button class="lab" onclick="lab()">Lab</button>
+        <ol>
+
+        </ol>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
